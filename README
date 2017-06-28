@@ -25,3 +25,6 @@ Project->proprities->C/C++ Build->Builder Settings : Build directory => ${worksp
 #Build on build directory
 cp xconfigure.build xconfigure
 Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/build/
+
+#Genbox
+Extract bin.tgz in your host ($HOME/bin)
