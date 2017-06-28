@@ -5,3 +5,23 @@ git add *
 git commit -m "first commit"
 git remote add origin https://github.com/eabeda/testGenbox.git
 git push -u origin master
+
+##ECLIPSE
+#Global config
+Project->proprities->C/C++ Build->Builder Settings : xcmd ng make
+Project->proprities->C/C++ Build->Behavior->Build : all install
+Project->proprities->C/C++ Build->Behavior->Clean : clean
+
+Project->proprities->Autotools->Configure Settings->configure : xconfigure
+Project->proprities->Autotools->Configure Settings->configure->Plateforme specifiers->host : armv7-brcm-linux-gnueabihf
+Project->proprities->Autotools->Configure Settings->configure->Plateforme specifiers->build : i486-pc-linux-gnu
+Project->proprities->Autotools->Configure Settings->configure->Directory specifiers->prefix : /usr
+
+Project->proprities->Autotools->Configure Settings->configure->Advanced->Additional : --enable-shared=plugins --enable-tests
+#Build on root directory
+cp xconfigure.root xconfigure
+Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/
+
+#Build on build directory
+cp xconfigure.buid xconfigure
+Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/build/
