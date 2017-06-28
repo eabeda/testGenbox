@@ -1,3 +1,3 @@
-bin_PROGRAMS=a.out
-a_out_SOURCES=testGenbox.c
+bin_PROGRAMS=testGenbox
+testGenbox_SOURCES=testGenbox.c
 
