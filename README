@@ -23,5 +23,5 @@ cp xconfigure.root xconfigure
 Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/
 
 #Build on build directory
-cp xconfigure.buid xconfigure
+cp xconfigure.build xconfigure
 Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/build/

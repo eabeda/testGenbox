@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xcmd ng autoreconf -fvi
+xcmd ng ./configure $*
