@@ -27,4 +27,20 @@ cp xconfigure.build xconfigure
 Project->proprities->C/C++ Build->Builder Settings : Build directory => ${workspace_loc:/system-manager}/build/
 
 #Genbox
+sudo genbox-ng
+ssh-agent /bin/bash
+ssh-add : password
+/etc/init.d/sshd restart
+
 Extract bin.tgz in your host ($HOME/bin)
+
+$ xcmd ng ls
+*** Genbox ***
+* Name = genbox-ng
+* Script to Execute = cd /home/eabeda && xshell 'ls'
+******
+workspace
+$ which xcmd
+/home/eabeda/bin/xcmd
+
+ssh genbox-ng
